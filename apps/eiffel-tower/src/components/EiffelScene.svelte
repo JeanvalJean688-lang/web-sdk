@@ -4,8 +4,8 @@
 
 	const context = getContext();
 	const canvas = $derived(context.stateLayoutDerived.canvasSizes());
-	const characterY = $state(0.22);
-	const multiplier = $state(1.00);
+	let characterY = $state(0.22);
+	let multiplier = $state(1.00);
 </script>
 
 <Graphics
