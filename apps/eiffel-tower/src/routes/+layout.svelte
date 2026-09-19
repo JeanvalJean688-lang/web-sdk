@@ -16,6 +16,7 @@
 	const loaderUrlStakeEngine = new URL('../../stake-engine-loader.gif', import.meta.url).href;
 	const loaderUrl = new URL('../../loader.gif', import.meta.url).href;
 
+	const localDev = import.meta.env.DEV;
 	setContext();
 </script>
 
