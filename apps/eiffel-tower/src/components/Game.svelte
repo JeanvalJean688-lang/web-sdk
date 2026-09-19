@@ -66,7 +66,7 @@
 
 		<UI>
 			{#snippet gameName()}
-				<UiGameName name="WAYS GAME" />
+				<UiGameName name="EIFFEL TOWER" />
 			{/snippet}
 			{#snippet logo()}
 				<Text
