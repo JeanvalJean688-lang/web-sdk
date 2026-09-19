@@ -59,12 +59,9 @@
 		<Sound />
 
 		<MainContainer>
-			<BoardFrame />
 		</MainContainer>
 
 		<MainContainer>
-			<Board />
-			<Anticipations />
 		</MainContainer>
 
 		<UI>
@@ -85,14 +82,6 @@
 				/>
 			{/snippet}
 		</UI>
-		<Win />
-		<FreeSpinIntro />
-		{#if ['desktop', 'landscape'].includes(context.stateLayoutDerived.layoutType())}
-			<FreeSpinCounter />
-		{/if}
-		<FreeSpinOutro />
-		<Transition />
-
 		<I18nTest />
 	{/if}
 </App>
