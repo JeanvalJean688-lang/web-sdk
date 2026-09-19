@@ -4,6 +4,7 @@
 
 	const context = getContext();
 	const canvas = $derived(context.stateLayoutDerived.canvasSizes());
+	const characterY = $state(0.22);
 </script>
 
 <Graphics
@@ -53,3 +54,5 @@
 		fill: 0xffffff,
 	}}
 />
+
+<Graphics x={canvas.width / 2} y={canvas.height * characterY} draw={(graphics) => { graphics.circle(0, 0, 22); graphics.fill(0xffd2a6); }} />
