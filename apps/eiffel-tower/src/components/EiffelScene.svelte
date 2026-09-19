@@ -1,11 +1,13 @@
 <script lang="ts">
 	import { Graphics, Text } from 'pixi-svelte';
+	import { onMount } from 'svelte';
 	import { getContext } from '../game/context';
 
 	const context = getContext();
 	const canvas = $derived(context.stateLayoutDerived.canvasSizes());
 	let characterY = $state(0.22);
 	let multiplier = $state(1.00);
+	let animationFrame = 0;
 </script>
 
 <Graphics
