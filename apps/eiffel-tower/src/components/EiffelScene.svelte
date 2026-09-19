@@ -8,6 +8,12 @@
 	let characterY = $state(0.22);
 	let multiplier = $state(1.00);
 	let animationFrame = 0;
+	function animate() {
+		characterY += 0.001;
+		multiplier += 0.001;
+		animationFrame = requestAnimationFrame(animate);
+	}
+	onMount(() => animate());
 </script>
 
 <Graphics
