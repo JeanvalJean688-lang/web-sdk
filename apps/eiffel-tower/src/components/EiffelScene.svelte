@@ -5,6 +5,7 @@
 	const context = getContext();
 	const canvas = $derived(context.stateLayoutDerived.canvasSizes());
 	const characterY = $state(0.22);
+	const multiplier = $state(1.00);
 </script>
 
 <Graphics
@@ -59,4 +60,4 @@
 <Graphics x={canvas.width / 2} y={canvas.height * characterY + 22} draw={(graphics) => { graphics.roundRect(-14, 0, 28, 42, 8); graphics.fill(0xe63946); }} />
 
 <Graphics x={canvas.width / 2} y={canvas.height * characterY + 32} draw={(g) => { g.moveTo(-12, 4); g.lineTo(-38, 20); g.moveTo(12, 4); g.lineTo(38, 20); g.stroke({ width: 8, color: 0xffd2a6 }); }} />
-<Graphics x={canvas.width/2} y={canvas.height*characterY+62} />
+<Text text={`${multiplier.toFixed(2)}x`} />
